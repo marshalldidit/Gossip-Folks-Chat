@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gossip Folks Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gossip Folks Chat</h1>
+    </header>
+
+    <section class="gossip-showcase">
+        <img src="gossip-hero.png" alt="Illustrated lineup of all 8 Gossip Type archetypes together" class="showcase-hero">
+    </section>
+
+    <section class="gossip-chat">
+        <h2>Join the Gossip Chat</h2>
+
+        <!-- View chat container in the browser, displaying chat messages and a form for users to submit their username and message. -->
+        <div id="chat-container">
+
+            <!-- View chat messages in the browser, displaying the username and message of each user who has submitted a message to the chat. -->
+            <div id="chat-messages"></div>
+
+            <!-- View chat form in the browser, allowing users to input their username and message, and submit it to the chat. -->
+            <div id="chat-form">
+                <input type="text" id="name-input" placeholder="Enter your username" required>
+                <input type="text" id="msg-input" placeholder="Type your message..." required>
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gossip-types">
+        <h2>Gossip Types</h2>
+        <div class="gossip-type">
+            <img src="gossip-type-protector.png" alt="Illustrated character representing The Protector archetype" class="gossip-type-icon">
+            <h3>The Protector</h3>
+            <p>The first to “check on you” quietly, before anyone else even finds out. They’re still going to find out though.</p>
+        </div>
+        <div class="gossip-type">
+            <img src="gossip-type-confidant.png" alt="Illustrated character representing The Confidant archetype" class="gossip-type-icon">
+            <h3>The Confidant</h3>
+            <p>People bring them secrets because they actually care, not because they’re nosy. Ok… maybe they are a little nosey.</p>
+        </div>
+        <div class="gossip-type">
+            <img src="gossip-type-auntie.png" alt="Illustrated character representing The Auntie archetype" class="gossip-type-icon">
+            <h3>The Auntie</h3>
+            <p>Operates under the guise of being worried about you and now so is everyone else in the room. Very messy.</p>
+        </div>
+        <div class="gossip-type">
+            <img src="gossip-type-observer.png" alt="Illustrated character representing The Observer archetype" class="gossip-type-icon">
+            <h3>The Observer</h3>
+            <p>Quietly worried about all the public drama. No need to broadcast sources though—the 24hr news cycle already does that.</p>
+        </div>
+        <div class="gossip-type">
+            <img src="gossip-type-spiller.png" alt="Illustrated character representing The Spiller archetype" class="gossip-type-icon">
+            <h3>The Spiller</h3>
+            <p>Gossip as a love language — fast, discreet, and a little too good at spilling folks’ tea.</p>
+        </div>
+        <div class="gossip-type">
+            <img src="gossip-type-lurker.png" alt="Illustrated character representing The Lurker archetype" class="gossip-type-icon">
+            <h3>The Lurker</h3>
+            <p>Collects gossip in close-proximity purely for the thrill of knowing. Tells absolutely no one but keeps a running tab of everyone’s mess.</p>
+        </div>
+        <div class="gossip-type">
+            <img src="gossip-type-host.png" alt="Illustrated character representing The TV/Radio Host archetype" class="gossip-type-icon">
+            <h3>The TV/Radio Host</h3>
+            <p>Gossip isn’t a guilty pleasure here — it’s a full broadcast, and if an audience is present, even better!</p>
+        </div>
+        <div class="gossip-type">
+            <img src="gossip-type-spectator.png" alt="Illustrated character representing The Spectator archetype" class="gossip-type-icon">
+            <h3>The Spectator</h3>
+            <p>Here for the drama purely as entertainment, but never actually in it. They know how to keep their mouth shut.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Gossip Folks. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
